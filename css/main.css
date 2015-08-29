@@ -46,3 +46,8 @@ footer {
 	bottom: 20px;
 	text-align: right;
 }
+
+#cfLogo {
+	background: black;
+	padding: 20px;
+}
