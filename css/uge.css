@@ -3,6 +3,11 @@
 	padding: 20px;
 }
 
-.reveal pre {
+.slides {
+	text-align: left;
+}
+
+.highlight-bash {
 	font-size: 0.95em;
+	background-color: lightgray;
 }
