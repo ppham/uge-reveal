@@ -165,12 +165,12 @@ terminal is on.</p>
 <p>The <tt class="docutils literal"><span class="pre">pwd</span></tt> command stands for <em>print working directory</em></p>
 <p>OSX</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">pwd</span>
-/Users/cewing
+/Users/ppham
 </pre></div>
 </div>
 <p>Linux</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">pwd</span>
-/home/cewing
+/home/ppham
 </pre></div>
 </div>
 <p>Windows (git-bash)</p>
@@ -205,7 +205,7 @@ specific.</p>
 </div>
 <p>vs.</p>
 <div class="line-block">
-<div class="line">/home/cewing/projects/someproject</div>
+<div class="line">/home/ppham/projects/someproject</div>
 <div class="line"><br /></div>
 </div>
 <p>A path is <em>absolute</em> when it starts with <tt class="docutils literal"><span class="pre">/</span></tt></p>
@@ -586,7 +586,7 @@ advanced usage patterns</p>
 <p>You wrote down the <em>path</em> returned by the <tt class="docutils literal"><span class="pre">pwd</span></tt> command as we were
 leaving.</p>
 <p>Can you get back there now?</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd</span> /Users/cewing
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd</span> /Users/ppham
 </pre></div>
 </div>
 </div>
@@ -1472,7 +1472,7 @@ save</p>
 moment ago</p>
 <p>Once there, use the <tt class="docutils literal"><span class="pre">init</span></tt> git command to create a new repository</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>git init
-Initialized empty Git repository in /home/cewing/uge_workshop/.git
+Initialized empty Git repository in /home/ppham/uge_workshop/.git
 </pre></div>
 </div>
 
@@ -1738,7 +1738,7 @@ in <a class="reference external" href="http://git-scm.com/book/en/v2">the Pro Gi
 may be)</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>git log
 commit 0bc447c0cfd0b7856cd19c705e8eefa0c64283de
-Author: cewing &lt;cris@crisewing.com&gt;
+Author: Paul Pham &lt;ppham@somewhere.com&gt;
 Date:   Sat Nov <span class="m">15</span> 03:33:09 <span class="m">2014</span> -0800
 
     adding unix notes, first draft
@@ -1765,10 +1765,10 @@ your notes file</p>
 <p>Use the <cite>a</cite> flag to <tt class="docutils literal"><span class="pre">ls</span></tt> to see <em>all</em> items in the folder:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>ls -la
 total 0
-drwxr-xr-x   <span class="m">4</span> cewing  staff  <span class="m">136</span> Nov <span class="m">15</span> 03:15 .
-drwxr-xr-x   <span class="m">6</span> cewing  staff  <span class="m">204</span> Nov <span class="m">15</span> 03:15 ..
-drwxr-xr-x  <span class="m">13</span> cewing  staff  <span class="m">442</span> Nov <span class="m">15</span> 03:33 .git
--rw-r--r--   <span class="m">1</span> cewing  staff    <span class="m">0</span> Nov <span class="m">15</span> 03:15 unix_notes.txt
+drwxr-xr-x   <span class="m">4</span> ppham  staff  <span class="m">136</span> Nov <span class="m">15</span> 03:15 .
+drwxr-xr-x   <span class="m">6</span> ppham  staff  <span class="m">204</span> Nov <span class="m">15</span> 03:15 ..
+drwxr-xr-x  <span class="m">13</span> ppham  staff  <span class="m">442</span> Nov <span class="m">15</span> 03:33 .git
+-rw-r--r--   <span class="m">1</span> ppham  staff    <span class="m">0</span> Nov <span class="m">15</span> 03:15 unix_notes.txt
 </pre></div>
 </div>
 </div>
@@ -1892,13 +1892,13 @@ changes</p>
       <p>Check your <tt class="docutils literal"><span class="pre">log</span></tt> to see the history of your changes unfold:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>git log
 commit 4eca5ad05bb6e3bc92595a9703a3c5c8da410820
-Author: cewing &lt;cris@crisewing.com&gt;
+Author: Paul Pham &lt;paul@somehwere.com&gt;
 Date:   Sat Nov <span class="m">15</span> 04:11:17 <span class="m">2014</span> -0800
 
     added note about hidden files
 
 commit 0bc447c0cfd0b7856cd19c705e8eefa0c64283de
-Author: cewing &lt;cris@crisewing.com&gt;
+Author: Paul Pham &lt;paul@somewhere.com&gt;
 Date:   Sat Nov <span class="m">15</span> 03:33:09 <span class="m">2014</span> -0800
 
     adding unix notes, first draft
@@ -2332,15 +2332,15 @@ to your local repository as a <em>remote</em></p>
 <tt class="docutils literal"><span class="pre">uge_workshop</span></tt> directory</p>
 <div class="container">
 <p>Then, add a remote to your local repository using the <tt class="docutils literal"><span class="pre">remote</span></tt> git command</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>git remote add origin https://github.com/cewing/uge-workshop.git
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>git remote add origin https://github.com/ppham/ppham-uge.git
 </pre></div>
 </div>
 </div>
 <div class="container">
 <p>Verify that this worked using the <tt class="docutils literal"><span class="pre">remote</span></tt> command with the <tt class="docutils literal"><span class="pre">v</span></tt> flag:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>git remote -v
-origin  https://github.com/cewing/uge-workshop.git <span class="o">(</span>fetch<span class="o">)</span>
-origin  https://github.com/cewing/uge-workshop.git <span class="o">(</span>push<span class="o">)</span>
+origin  https://github.com/ppham/ppham-uge.git <span class="o">(</span>fetch<span class="o">)</span>
+origin  https://github.com/ppham/ppham-uge.git <span class="o">(</span>push<span class="o">)</span>
 </pre></div>
 </div>
 </div>
@@ -2384,7 +2384,7 @@ checked out</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>git push -u origin master
 Counting objects: 6, <span class="k">done</span>.
 ...
-To git@github.com:cewing/uge-workshop.git
+To git@github.com:ppham/ppham-uge.git
  * <span class="o">[</span>new branch<span class="o">]</span>      master -&gt; master
 Branch master <span class="nb">set </span>up to track remote branch master from origin.
 </pre></div>
@@ -2429,7 +2429,7 @@ remotes</p>
 <p>Finally, push your git-notes branch up to github too</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>git push -u origin git-notes
 ...
-To git@github.com:cewing/uge-workshop.git
+To git@github.com:ppham/ppham-uge.git
  * <span class="o">[</span>new branch<span class="o">]</span>      git-notes -&gt; git-notes
 Branch git-notes <span class="nb">set </span>up to track remote branch git-notes from origin.
 </pre></div>
