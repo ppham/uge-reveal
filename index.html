@@ -608,7 +608,7 @@ that looks like this:</p>
 </pre></div>
 </div>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd</span> /c/Users/Paul Pham
-sh.exe<span class="s2">&quot;: cd: /c/Users/Cris: No such file or directory</span>
+sh.exe<span class="s2">&quot;: cd: /c/Users/Paul: No such file or directory</span>
 </pre></div>
 </div>
 <p>The problem is the space between my first and last names</p>
@@ -632,7 +632,7 @@ is just another character like any other letter or number</p>
 <div class="build container">
 <p>You can do this by <em>escaping</em> it with the <tt class="docutils literal"><span class="pre">\</span></tt> character</p>
 <p>Try typing this instead:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd</span> /c/Users/Cris<span class="se">\ </span>Ewing
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd</span> /c/Users/Paul<span class="se">\ </span>Pham
 </pre></div>
 </div>
 <p>How'd that work?</p>
@@ -1428,7 +1428,7 @@ safe</p>
 <div class="container">
 <p>We use the <tt class="docutils literal"><span class="pre">config</span></tt> git command to set these up:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>git config --global user.name <span class="s2">&quot;Paul Pham&quot;</span>
-<span class="nv">$ </span>git config --global user.email <span class="s2">&quot;cris@crisewing.com&quot;</span>
+<span class="nv">$ </span>git config --global user.email <span class="s2">&quot;paul@somewhere.com&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -2846,7 +2846,7 @@ well for quite some time</p>
 						</p>
 						<pre>
 							<span class="nv">$ </span>git config --global user.name <span class="s2">"Paul Pham"</span>
-							<span class="nv">$ </span>git config --global user.email "<span class="s2 git-email">cris@crisewing.com</span>"
+							<span class="nv">$ </span>git config --global user.email "<span class="s2 git-email">Paul@somewhere.com</span>"
 						</pre>
 						<p class="">Each time you make a <em>commit</em> git will record
 			that <em>you</em> made the changes, and will provide contact information for
