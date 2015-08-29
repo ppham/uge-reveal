@@ -7,7 +7,7 @@
 	text-align: left;
 }
 
-.highlight-bash, .uge pre {
+.highlight-bash pre, .uge pre {
 	font-size: 0.95em;
 	background-color: lightgray;
 }
